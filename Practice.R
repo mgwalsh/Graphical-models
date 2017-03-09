@@ -28,9 +28,7 @@ plot(DG)
 ugList(terms(mm), result="matrix")
 
 x11()
-par(mfrow=c(1,1), mar=c(5,4.5,1,1))
+par(mfrow=c(1,1), mar=c(4,4,1,1))
 plot(DG)
 dev.copy(pdf, 'graph.pdf')
 dev.off()
-
-
