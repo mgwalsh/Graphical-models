@@ -1,4 +1,4 @@
-# Wine data from gRim package
+# Wine dataframe from gRbase package
 
 library(gRim)
 library(Rgraphviz)
