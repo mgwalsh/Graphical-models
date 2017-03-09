@@ -20,7 +20,7 @@ maize <- maize[,4:11]
 dim(maize)
 
 gm1 <- dmod(~.^., data = maize)
-gm2 <- stepwise(dm1, criterion = "test", alpha=0.0001)
+gm2 <- stepwise(gm1)
 
 dag <- ugList(terms(gm2), result="matrix")
 net <- as.network(x = dag, directed = FALSE, loops = FALSE, matrix.type = "adjacency")
